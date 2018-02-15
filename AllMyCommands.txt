@@ -1,0 +1,17 @@
+git init
+git add section1.1.txt section3.1.txt section5.1.txt
+git commit -m "Added the 3 wanted sections"
+git rm section3.1.txt
+git reset HEAD section3.1.txt
+git checkout -- section3.1.txt
+git remote add origin2 https://github.com/omarelmoghazy/sprint-0
+git push origin2 master
+git branch ReadMe
+git checkout ReadMe
+git add README.md
+git commit -m "Added README.md to the ReadMe branch"
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m "Added the file containning all my commands"
+git push origin2 master
